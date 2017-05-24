@@ -18,10 +18,26 @@
                 flex-direction: row;
                 /* possible values row || column || row-reverse || column-reverse */
             }
+
             /*where ul represents a flex container*/
             ul {
                 flex-wrap: wrap;
                 /* possible values wrap || nowrap || wrap-reverse */
+            }
+
+            /*Flex-flow is shorthand for flex-direction and Flex-wrap values 
+                e.g flex-flow: row nowrap, flex-flow: column wrap, flex-flow: column nowrap */
+            ul {
+                flex-flow: row wrap; /*direction "row" and yes, please wrap the items.*/
+            }
+
+            /*It determines how elements are laid out on the main-axis(y-axis) similar to the text-align property for text*/
+            ul {
+                justify-content: space-around;
+                /* possible values flex-start || flex-end || center || space-between || space-around */
+            }
+            ul:nth-child(2){
+                justify-content: space-around;
             }
         </style>
     </head>
@@ -39,6 +55,12 @@
             <li></li>
             <li></li>
             <li></li>
+        </ul>
+        <!-- Testing Space around -->
+        <ul>
+            <li>
+            <li>
+            <li>
         </ul>
     </body>
 </html>

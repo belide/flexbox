@@ -1,0 +1,49 @@
+/*** Flex Container Properties****/
+
+            /*Make parent element a flex container*/
+            ul {
+                display: flex; /*or inline-flex*/
+            }
+            li {
+                width: 100px;
+                height: 100px;
+                background-color: #8cacea;
+                margin: 8px;
+            }
+            /*where ul represents a flex container*/
+            ul {
+                flex-direction: row;
+                /* possible values row || column || row-reverse || column-reverse */
+            }
+
+            /*where ul represents a flex container*/
+            ul {
+                flex-wrap: wrap;
+                /* possible values wrap || nowrap || wrap-reverse */
+            }
+
+            /*Flex-flow is shorthand for flex-direction and Flex-wrap values 
+                e.g flex-flow: row nowrap, flex-flow: column wrap, flex-flow: column nowrap */
+            ul {
+                flex-flow: row wrap; /*direction "row" and yes, please wrap the items.*/
+            }
+
+            /*It determines how elements are laid out on the main-axis(x-axis) similar to the text-align property for text*/
+            ul:nth-child(2){
+                justify-content: space-around;
+                /* possible values flex-start || flex-end || center || space-between || space-around */
+            }
+
+            /*It determines how elements are laid out on the cross-axis(y-axis)*/
+            ul:nth-child(3){
+                align-items: flex-end;
+                /* possible values flex-start || flex-end || center || stretch || baseline */
+            }
+
+            /*It determines how elements are laid out on the cross-axis(y-axis) for multi-line 
+                flex container e.g when you use wrap for flex-wrap*/
+            ul:nth-child(4){
+                flex-wrap: wrap;
+                align-content: center;
+                /* possible values flex-start || flex-end || center || stretch || baseline */
+            }

@@ -2,43 +2,9 @@
 <html>
     <head>
         <title>Learning Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="flexcontainer.css" >
         <style>
-            /*Make parent element a flex container*/
-            ul {
-                display: flex; /*or inline-flex*/
-            }
-            li {
-                width: 100px;
-                height: 100px;
-                background-color: #8cacea;
-                margin: 8px;
-            }
-            /*where ul represents a flex container*/
-            ul {
-                flex-direction: row;
-                /* possible values row || column || row-reverse || column-reverse */
-            }
-
-            /*where ul represents a flex container*/
-            ul {
-                flex-wrap: wrap;
-                /* possible values wrap || nowrap || wrap-reverse */
-            }
-
-            /*Flex-flow is shorthand for flex-direction and Flex-wrap values 
-                e.g flex-flow: row nowrap, flex-flow: column wrap, flex-flow: column nowrap */
-            ul {
-                flex-flow: row wrap; /*direction "row" and yes, please wrap the items.*/
-            }
-
-            /*It determines how elements are laid out on the main-axis(y-axis) similar to the text-align property for text*/
-            ul {
-                justify-content: space-around;
-                /* possible values flex-start || flex-end || center || space-between || space-around */
-            }
-            ul:nth-child(2){
-                justify-content: space-around;
-            }
+            
         </style>
     </head>
     <body>
@@ -56,11 +22,34 @@
             <li></li>
             <li></li>
         </ul>
-        <!-- Testing Space around -->
+        <!-- Testing Justify Content -->
         <ul>
             <li>
             <li>
             <li>
+        </ul>
+
+        <!-- Testing Align Items -->
+        <ul>
+            <li>
+            <li>
+            <li>
+        </ul>
+
+        <!-- Testing Align contents -->
+        <ul>
+            <li></li> 
+            <li></li> 
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li> 
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </body>
 </html>

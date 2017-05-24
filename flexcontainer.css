@@ -3,6 +3,7 @@
             /*Make parent element a flex container*/
             ul {
                 display: flex; /*or inline-flex*/
+                list-style: none;
             }
             li {
                 width: 100px;

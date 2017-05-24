@@ -17,8 +17,41 @@
             /* Flex-basis */
             div:nth-child(2) ul:nth-of-type(3) > li:nth-child(1) {
                 width: auto!important;/*Overiding the Width Property set previously*/
-                flex-basis: auto!important; /*give it a value higher than 0*/
+                flex-basis: auto!important; /*give it a value higher than 0 and add the unit (percentages || ems || rems || pixels)*/
             }
+
+            /* Flex Shorthand allows you set the flex-grow, flex-shrink and flex-basis*/
+            div:nth-child(2) ul:nth-of-type(4) > li:nth-child(1) {
+                flex: 0 1 auto; /*flex-grow: 0; flex-shrink: 1; flex-basis: auto*/
+                /*flex: 0 1 auto; = flex:default */
+                /*flex: 0 0 auto; = flex:none */
+                /*flex: 1 1 auto; = flex:auto */
+            }
+
+            /*this is an absolute flex item*/
+            div:nth-child(2) ul:nth-of-type(4) > li:nth-child(2) {
+                flex: 1 1; /*flex-basis defaults to 0*/
+            }
+            /*this is a relative flex item*/
+            div:nth-child(2) ul:nth-of-type(4) > li:nth-child(3) {
+                flex-basis: 200px; /*only flex-basis is set*/
+            }
+
+            /*Flex: "positive number"*/
+            
+            div:nth-child(2) ul:nth-of-type(5) > li:nth-child(1) {
+                flex: 2 1 0; /*same as just writing flex: 2*/
+            }
+            div:nth-child(2) ul:nth-of-type(5) > li:nth-child(2){
+                flex: 1 1 0; /*same as just writing flex: 1*/
+            }
+
+            /*Align-self*/
+            div:nth-child(2) ul:nth-of-type(6) > li:nth-child(1){
+                flex: 1 1 0; /*same as just writing flex: 1*/
+            }
+            
+
         </style>
     </head>
     <body>
@@ -88,7 +121,22 @@
 
             <h3>Flex Basis</h3>
             <ul>
+                <li>I am a simple list AND I am a simple list</li>  
+                <li>I am a simple list AND I am a simple list</li>  
                 <li>I am a simple list AND I am a simple list</li>                  
+            </ul>
+
+            <h3>Flex Shorthand</h3>
+            <ul>
+                <li>I am a simple list AND I am a simple list</li>  
+                <li>I am a simple list AND I am a simple list</li>  
+                <li>I am a simple list AND I am a simple list</li>                  
+            </ul>
+
+            <h3>Flex: "positive number"</h3>
+            <ul>
+                <li>I am one</li>  
+                <li>I am two</li>                  
             </ul>
         </div>
         

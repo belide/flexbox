@@ -48,8 +48,26 @@
 
             /*Align-self*/
             div:nth-child(2) ul:nth-of-type(6) > li:nth-child(1){
-                flex: 1 1 0; /*same as just writing flex: 1*/
+                align-self: stretch;
+                 /*different values are auto || flex-start || flex-end || center || baseline || stretch */
             }
+
+             /*Align-self*/
+            div:nth-child(2) ul:nth-of-type(7) > li{
+                flex: auto; /*remember this is same as  ex: 1 1 auto;*/
+                flex: 1; /*same as  ex: 1 1 0*/
+                border: 2px solid red;
+            }
+
+             /*Working with Margin*/
+            div:nth-child(2) ul:nth-of-type(8) > li{
+                flex: 0 0 auto; /*remember this is same as  ex: 1 1 auto;*/
+            }
+
+            div:nth-child(2) ul:nth-of-type(8) > li:nth-child(1){
+                margin-right: auto;
+            }
+
             
 
         </style>
@@ -137,6 +155,28 @@
             <ul>
                 <li>I am one</li>  
                 <li>I am two</li>                  
+            </ul>
+
+            <h3>Align-Self</h3>
+            <ul>
+                <li>I am one</li>  
+                <li>I am two</li>                  
+            </ul>
+
+            <h3>Absolute and Relative</h3>
+            <ul>
+                <li>This is just some random text to buttress the point being explained. 
+                    Some more random text to buttress the point being explained.</li>
+                <li>This is just a shorter random text.</li> 
+            </ul>
+
+            <h3>Margins</h3>
+            <ul>
+                <li>Branding</li>
+                <li>Home</li> 
+                <li>Services</li> 
+                <li>About</li> 
+                <li>Contact</li>
             </ul>
         </div>
         
